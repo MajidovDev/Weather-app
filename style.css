@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredoka One', cursive;
+    background: rgb(54,206,235);
+    background: linear-gradient(90deg, rgb(243, 247, 248) 0%, rgb(60, 215, 247) 100%);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    padding-top: 15%;
+    text-align: center;
+}
+.left-section .location{
+    font-size: 35px;
+    margin-bottom: 4rem;
+}
+.left-section .temp-div{
+    font-size: 25px;
+}
+.left-section .temp-div .temp{
+    font-size: 45px;
+    margin-bottom: 2rem;
+    text-shadow: 5px 5px 5px rgb(53, 201, 238);
+}
+.left-section .temp-div >div{
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+.src{
+    /* display: flex; */
+    display: block;
+    margin: auto 4rem;
+    margin-top: 20%; 
+}
+.src input{
+    width: 100%;
+}
+.src .author{
+    font-size: 12px;
+}
+@media (max-width: 992px){
+    .container{
+        display: block;
+        padding-top:25%;
+
+    }
+    .src{
+        margin-top: 12%;
+    }
+}
+@media(max-width: 768px){
+    .container{
+        padding-top:35%;
+    }
+    .src{
+        margin: auto 2rem;
+        margin-top: 12%;
+    }
+    .left-section .location{
+        font-size: 30px;
+    }
+    .left-section .temp-div{
+        font-size: 18px;
+    }
+}
+@media(max-width: 576px){
+    .container{
+        padding-top: 45%;
+    }
+    .left-section .location{
+        font-size: 25px;
+        margin-bottom: 4rem;
+    }
+    .left-section .temp-div >div{
+        margin-bottom: 0rem;
+        letter-spacing: 1px;
+    }
+    .src{
+        margin: auto 3rem;
+        margin-top: 12%;
+    }
+}
+@media(max-width: 350px){
+    .container{
+        padding-top: 65%;
+    }
+    .left-section .location{
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+    .left-section .temp-div >div{
+        margin-bottom: 0;
+        letter-spacing: 1px;
+    }
+    .left-section .temp-div{
+        font-size: 15px;
+    }
+    .src{
+        margin: auto 1rem;
+        margin-top: 12%;
+    }
+}
